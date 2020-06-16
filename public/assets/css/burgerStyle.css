@@ -15,7 +15,7 @@ body {
 }
 
 .jumbotron.jumbotron-fluid {
-	background-color: #c7ba41;
+	background-color: #394d27;
 }
 h1,
 h3 {
@@ -28,8 +28,12 @@ h3 {
 	padding: 20px;
 	border: 1px solid #b6b6b6;
 	border-radius: 5px;
-	background-color: #b6b6b6;
+	background-color: transparent;
 }
+#create-form {
+	margin-left: 20%;
+}
+
 h2 {
 	margin-bottom: 20px;
 }
@@ -60,8 +64,8 @@ li {
 }
 
 .btn.btn-primary {
-	background-color: #384b60;
-	border-color: #384b60;
+	background-color: #394d27;
+	border-color: #394d27;
 	color: #f8f7f2;
 }
 .edb {

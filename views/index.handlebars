@@ -1,28 +1,24 @@
+
 <div class="row" id="bodyRow">
-   <div class="col-2-sm"></div>
+    
+    <div class="col-sm-2"></div>
+    
     <div class="col-sm-4">
         <div id="notDevourList">
-
             <h2>Not Yet Devoured</h2>
-
             <ul>
                 {{#each burgers}}
                     {{#unless devoured}}
                         {{> burgers/burger-block devour=false}}
                     {{/unless}}
                 {{/each}}
-
             </ul>
-    
         </div> 
     </div>
 
     <div class="col-sm-4">
-
         <div id="devourList">
-
             <h2>Devoured</h2>
-
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
@@ -30,16 +26,9 @@
                     {{/if}}
                 {{/each}}
             </ul>    
-
         </div>
-
     </div>
-    <div class="col-2-sm"></div>
-</div>    
-
-<div>
-    <div class="col-3-sm"></div>
-    <div class="col-sm-6" id="addBurgerDiv">
+    <div class="col-sm-10" id="addBurgerDiv">
 
         <form class="form-group" id="create-form">
             <h2>Add a Burger</h2>
@@ -50,13 +39,13 @@
             </div>
 
             <div class="form-group">
-                <label for="devoured">Have you devoured it?</label><br>
+                <label for="devoured">Have you eaten it?</label><br>
 
                 <input type="radio" name="devouredStatus" value="1" class="form-check-input">
-                <label for="devouredStatus" class="radioLabel">Yes, it has been devoured!</label><br>
+                <label for="devouredStatus" class="radioLabel">Yes</label><br>
 
                 <input type="radio" name="devouredStatus" value="0" class="form-check-input">
-                <label for="devouredStatus" class="radioLabel">No, it has not been devoured.</label><br> 
+                <label for="devouredStatus" class="radioLabel">No</label><br> 
 
             </div>
 
@@ -64,5 +53,5 @@
 
         </form>
     </div>
-    <div class="col-3-sm"></div>
 </div>
+
